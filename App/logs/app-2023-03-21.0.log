@@ -1,0 +1,1288 @@
+2023-03-21 00:00:46,328 [http-nio-9090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-21 00:00:46,337 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet                  - Initializing Servlet 'dispatcherServlet'
+2023-03-21 00:00:46,416 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet                  - Completed initialization in 78 ms
+2023-03-21 00:01:30,173 [http-nio-9090-exec-6] ERROR o.a.c.c.C.[.[.[/].[dispatcherServlet]              - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.storemanagement.data.utils.DataUtils.converCustomeDtoToModel(DataUtils.java:69)
+	at com.storemanagement.data.utils.DataUtils.converTransactionDTOToModel(DataUtils.java:86)
+	at com.storemanagement.resources.TransactionResource.updateTransaction(TransactionResource.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:893)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:798)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:920)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:663)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2023-03-21 10:16:26,600 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-21 10:16:26,747 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 124ms. Found 2 JPA repository interfaces.
+2023-03-21 10:16:28,166 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 9090 (http)
+2023-03-21 10:16:28,198 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-9090"]
+2023-03-21 10:16:28,227 [main] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2023-03-21 10:16:28,227 [main] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-03-21 10:16:28,513 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2023-03-21 10:16:28,514 [main] INFO  o.s.web.context.ContextLoader                      - Root WebApplicationContext: initialization completed in 3467 ms
+2023-03-21 10:16:28,798 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Starting...
+2023-03-21 10:16:28,806 [main] WARN  com.zaxxer.hikari.util.DriverDataSource            - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-21 10:16:29,514 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Start completed.
+2023-03-21 10:16:29,596 [main] INFO  o.hibernate.jpa.internal.util.LogHelper            - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2023-03-21 10:16:29,905 [main] INFO  org.hibernate.Version                              - HHH000412: Hibernate Core {5.3.17.Final}
+2023-03-21 10:16:29,907 [main] INFO  org.hibernate.cfg.Environment                      - HHH000206: hibernate.properties not found
+2023-03-21 10:16:30,212 [main] INFO  org.hibernate.annotations.common.Version           - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2023-03-21 10:16:30,506 [main] INFO  org.hibernate.dialect.Dialect                      - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-03-21 10:16:31,725 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-21 10:16:31,739 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'transactionRepository2': Unsatisfied dependency expressed through field 'sessionFactory'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.hibernate.SessionFactory' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2023-03-21 10:16:31,740 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-21 10:16:31,744 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Shutdown initiated...
+2023-03-21 10:16:31,770 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Shutdown completed.
+2023-03-21 10:16:31,773 [main] INFO  org.apache.catalina.core.StandardService           - Stopping service [Tomcat]
+2023-03-21 10:16:31,791 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-03-21 10:16:31,922 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter             - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field sessionFactory in com.storemanagement.repository.TransactionRepository2 required a bean of type 'org.hibernate.SessionFactory' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.hibernate.SessionFactory' in your configuration.
+
+2023-03-21 10:48:50,893 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-21 10:48:51,010 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 99ms. Found 2 JPA repository interfaces.
+2023-03-21 10:48:52,122 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 9090 (http)
+2023-03-21 10:48:52,146 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-9090"]
+2023-03-21 10:48:52,162 [main] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2023-03-21 10:48:52,162 [main] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-03-21 10:48:52,362 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2023-03-21 10:48:52,362 [main] INFO  o.s.web.context.ContextLoader                      - Root WebApplicationContext: initialization completed in 3014 ms
+2023-03-21 10:48:52,594 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Starting...
+2023-03-21 10:48:52,600 [main] WARN  com.zaxxer.hikari.util.DriverDataSource            - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-21 10:48:53,052 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Start completed.
+2023-03-21 10:48:53,126 [main] INFO  o.hibernate.jpa.internal.util.LogHelper            - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2023-03-21 10:48:53,366 [main] INFO  org.hibernate.Version                              - HHH000412: Hibernate Core {5.3.17.Final}
+2023-03-21 10:48:53,367 [main] INFO  org.hibernate.cfg.Environment                      - HHH000206: hibernate.properties not found
+2023-03-21 10:48:53,623 [main] INFO  org.hibernate.annotations.common.Version           - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2023-03-21 10:48:53,876 [main] INFO  org.hibernate.dialect.Dialect                      - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-03-21 10:48:54,791 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-21 10:48:55,203 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator            - HHH000397: Using ASTQueryTranslatorFactory
+2023-03-21 10:48:55,656 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-21 10:48:55,975 [main] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Initializing ExecutorService 'applicationTaskExecutor'
+2023-03-21 10:48:56,246 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Context refreshed
+2023-03-21 10:48:56,271 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Found 1 custom documentation plugin(s)
+2023-03-21 10:48:56,282 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner               - Scanning for api listing references
+2023-03-21 10:48:56,519 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-9090"]
+2023-03-21 10:48:56,564 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 9090 (http) with context path ''
+2023-03-21 10:49:06,846 [http-nio-9090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-21 10:49:06,846 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet                  - Initializing Servlet 'dispatcherServlet'
+2023-03-21 10:49:06,861 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet                  - Completed initialization in 15 ms
+2023-03-21 11:55:40,358 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-21 11:55:40,490 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 112ms. Found 2 JPA repository interfaces.
+2023-03-21 11:55:41,802 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 9090 (http)
+2023-03-21 11:55:41,830 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-9090"]
+2023-03-21 11:55:41,848 [main] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2023-03-21 11:55:41,848 [main] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-03-21 11:55:42,050 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2023-03-21 11:55:42,050 [main] INFO  o.s.web.context.ContextLoader                      - Root WebApplicationContext: initialization completed in 3244 ms
+2023-03-21 11:55:42,450 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Starting...
+2023-03-21 11:55:42,454 [main] WARN  com.zaxxer.hikari.util.DriverDataSource            - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-21 11:55:42,911 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Start completed.
+2023-03-21 11:55:42,983 [main] INFO  o.hibernate.jpa.internal.util.LogHelper            - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2023-03-21 11:55:43,217 [main] INFO  org.hibernate.Version                              - HHH000412: Hibernate Core {5.3.17.Final}
+2023-03-21 11:55:43,219 [main] INFO  org.hibernate.cfg.Environment                      - HHH000206: hibernate.properties not found
+2023-03-21 11:55:43,454 [main] INFO  org.hibernate.annotations.common.Version           - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2023-03-21 11:55:43,649 [main] INFO  org.hibernate.dialect.Dialect                      - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-03-21 11:55:44,623 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-21 11:55:45,046 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator            - HHH000397: Using ASTQueryTranslatorFactory
+2023-03-21 11:55:45,511 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-21 11:55:45,906 [main] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Initializing ExecutorService 'applicationTaskExecutor'
+2023-03-21 11:55:46,179 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Context refreshed
+2023-03-21 11:55:46,205 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Found 1 custom documentation plugin(s)
+2023-03-21 11:55:46,215 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner               - Scanning for api listing references
+2023-03-21 11:55:46,444 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-9090"]
+2023-03-21 11:55:46,494 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 9090 (http) with context path ''
+2023-03-21 11:55:58,201 [http-nio-9090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-21 11:55:58,205 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet                  - Initializing Servlet 'dispatcherServlet'
+2023-03-21 11:55:58,225 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet                  - Completed initialization in 20 ms
+2023-03-21 11:56:39,370 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-21 11:56:39,497 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 109ms. Found 2 JPA repository interfaces.
+2023-03-21 11:56:40,554 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 9090 (http)
+2023-03-21 11:56:40,587 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-9090"]
+2023-03-21 11:56:40,609 [main] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2023-03-21 11:56:40,609 [main] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-03-21 11:56:40,811 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2023-03-21 11:56:40,812 [main] INFO  o.s.web.context.ContextLoader                      - Root WebApplicationContext: initialization completed in 2890 ms
+2023-03-21 11:56:41,031 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Starting...
+2023-03-21 11:56:41,037 [main] WARN  com.zaxxer.hikari.util.DriverDataSource            - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-21 11:56:41,418 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Start completed.
+2023-03-21 11:56:41,482 [main] INFO  o.hibernate.jpa.internal.util.LogHelper            - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2023-03-21 11:56:41,604 [main] INFO  org.hibernate.Version                              - HHH000412: Hibernate Core {5.3.17.Final}
+2023-03-21 11:56:41,606 [main] INFO  org.hibernate.cfg.Environment                      - HHH000206: hibernate.properties not found
+2023-03-21 11:56:41,845 [main] INFO  org.hibernate.annotations.common.Version           - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2023-03-21 11:56:42,083 [main] INFO  org.hibernate.dialect.Dialect                      - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-03-21 11:56:43,022 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-21 11:56:43,387 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator            - HHH000397: Using ASTQueryTranslatorFactory
+2023-03-21 11:56:43,786 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-21 11:56:44,099 [main] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Initializing ExecutorService 'applicationTaskExecutor'
+2023-03-21 11:56:44,353 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Context refreshed
+2023-03-21 11:56:44,376 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Found 1 custom documentation plugin(s)
+2023-03-21 11:56:44,388 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner               - Scanning for api listing references
+2023-03-21 11:56:44,631 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-9090"]
+2023-03-21 11:56:44,674 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 9090 (http) with context path ''
+2023-03-21 11:56:58,046 [http-nio-9090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-21 11:56:58,047 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet                  - Initializing Servlet 'dispatcherServlet'
+2023-03-21 11:56:58,062 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet                  - Completed initialization in 15 ms
+2023-03-21 11:59:12,355 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-21 11:59:12,498 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 125ms. Found 2 JPA repository interfaces.
+2023-03-21 11:59:13,631 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 9090 (http)
+2023-03-21 11:59:13,664 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-9090"]
+2023-03-21 11:59:13,680 [main] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2023-03-21 11:59:13,681 [main] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-03-21 11:59:13,867 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2023-03-21 11:59:13,867 [main] INFO  o.s.web.context.ContextLoader                      - Root WebApplicationContext: initialization completed in 2863 ms
+2023-03-21 11:59:14,119 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Starting...
+2023-03-21 11:59:14,125 [main] WARN  com.zaxxer.hikari.util.DriverDataSource            - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-21 11:59:14,539 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Start completed.
+2023-03-21 11:59:14,621 [main] INFO  o.hibernate.jpa.internal.util.LogHelper            - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2023-03-21 11:59:14,772 [main] INFO  org.hibernate.Version                              - HHH000412: Hibernate Core {5.3.17.Final}
+2023-03-21 11:59:14,775 [main] INFO  org.hibernate.cfg.Environment                      - HHH000206: hibernate.properties not found
+2023-03-21 11:59:15,032 [main] INFO  org.hibernate.annotations.common.Version           - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2023-03-21 11:59:15,219 [main] INFO  org.hibernate.dialect.Dialect                      - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-03-21 11:59:16,155 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-21 11:59:16,546 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator            - HHH000397: Using ASTQueryTranslatorFactory
+2023-03-21 11:59:16,975 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-21 11:59:17,294 [main] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Initializing ExecutorService 'applicationTaskExecutor'
+2023-03-21 11:59:17,559 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Context refreshed
+2023-03-21 11:59:17,583 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Found 1 custom documentation plugin(s)
+2023-03-21 11:59:17,596 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner               - Scanning for api listing references
+2023-03-21 11:59:17,818 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-9090"]
+2023-03-21 11:59:17,880 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 9090 (http) with context path ''
+2023-03-21 11:59:25,893 [http-nio-9090-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-21 11:59:25,894 [http-nio-9090-exec-2] INFO  o.s.web.servlet.DispatcherServlet                  - Initializing Servlet 'dispatcherServlet'
+2023-03-21 11:59:25,910 [http-nio-9090-exec-2] INFO  o.s.web.servlet.DispatcherServlet                  - Completed initialization in 16 ms
+2023-03-21 12:00:57,178 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-21 12:00:57,284 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 93ms. Found 2 JPA repository interfaces.
+2023-03-21 12:00:58,323 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 9090 (http)
+2023-03-21 12:00:58,352 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-9090"]
+2023-03-21 12:00:58,367 [main] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2023-03-21 12:00:58,367 [main] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-03-21 12:00:58,560 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2023-03-21 12:00:58,560 [main] INFO  o.s.web.context.ContextLoader                      - Root WebApplicationContext: initialization completed in 2770 ms
+2023-03-21 12:00:58,838 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Starting...
+2023-03-21 12:00:58,845 [main] WARN  com.zaxxer.hikari.util.DriverDataSource            - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-21 12:00:59,285 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Start completed.
+2023-03-21 12:00:59,353 [main] INFO  o.hibernate.jpa.internal.util.LogHelper            - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2023-03-21 12:00:59,495 [main] INFO  org.hibernate.Version                              - HHH000412: Hibernate Core {5.3.17.Final}
+2023-03-21 12:00:59,496 [main] INFO  org.hibernate.cfg.Environment                      - HHH000206: hibernate.properties not found
+2023-03-21 12:00:59,795 [main] INFO  org.hibernate.annotations.common.Version           - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2023-03-21 12:01:00,016 [main] INFO  org.hibernate.dialect.Dialect                      - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-03-21 12:01:01,005 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-21 12:01:01,457 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator            - HHH000397: Using ASTQueryTranslatorFactory
+2023-03-21 12:01:01,930 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-21 12:01:02,280 [main] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Initializing ExecutorService 'applicationTaskExecutor'
+2023-03-21 12:01:02,587 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Context refreshed
+2023-03-21 12:01:02,612 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Found 1 custom documentation plugin(s)
+2023-03-21 12:01:02,623 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner               - Scanning for api listing references
+2023-03-21 12:01:03,027 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-9090"]
+2023-03-21 12:01:03,050 [main] ERROR org.apache.catalina.util.LifecycleBase             - Failed to start component [Connector[HTTP/1.1-9090]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1067)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:227)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:263)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:195)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:297)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:163)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204)
+	at com.storemanagement.App.main(App.java:10)
+Caused by: java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:455)
+	at java.base/sun.nio.ch.Net.bind(Net.java:447)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:228)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:211)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1141)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1227)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:592)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1064)
+	... 14 common frames omitted
+2023-03-21 12:01:03,057 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Pausing ProtocolHandler ["http-nio-9090"]
+2023-03-21 12:01:03,058 [main] INFO  org.apache.catalina.core.StandardService           - Stopping service [Tomcat]
+2023-03-21 12:01:03,082 [main] INFO  org.apache.catalina.util.LifecycleBase             - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2023-03-21 12:01:03,086 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Stopping ProtocolHandler ["http-nio-9090"]
+2023-03-21 12:01:03,088 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Destroying ProtocolHandler ["http-nio-9090"]
+2023-03-21 12:01:03,092 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-03-21 12:01:03,098 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter             - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 9090 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 9090, or configure this application to listen on another port.
+
+2023-03-21 12:01:03,104 [main] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-03-21 12:01:03,111 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-21 12:01:03,117 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Shutdown initiated...
+2023-03-21 12:01:03,222 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Shutdown completed.
+2023-03-21 12:01:18,496 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-21 12:01:18,624 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 113ms. Found 2 JPA repository interfaces.
+2023-03-21 12:01:19,697 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 9090 (http)
+2023-03-21 12:01:19,720 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-9090"]
+2023-03-21 12:01:19,737 [main] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2023-03-21 12:01:19,737 [main] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-03-21 12:01:19,939 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2023-03-21 12:01:19,939 [main] INFO  o.s.web.context.ContextLoader                      - Root WebApplicationContext: initialization completed in 2855 ms
+2023-03-21 12:01:20,239 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Starting...
+2023-03-21 12:01:20,244 [main] WARN  com.zaxxer.hikari.util.DriverDataSource            - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-21 12:01:20,638 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Start completed.
+2023-03-21 12:01:20,706 [main] INFO  o.hibernate.jpa.internal.util.LogHelper            - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2023-03-21 12:01:20,847 [main] INFO  org.hibernate.Version                              - HHH000412: Hibernate Core {5.3.17.Final}
+2023-03-21 12:01:20,849 [main] INFO  org.hibernate.cfg.Environment                      - HHH000206: hibernate.properties not found
+2023-03-21 12:01:21,117 [main] INFO  org.hibernate.annotations.common.Version           - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2023-03-21 12:01:21,297 [main] INFO  org.hibernate.dialect.Dialect                      - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-03-21 12:01:22,237 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-21 12:01:22,629 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator            - HHH000397: Using ASTQueryTranslatorFactory
+2023-03-21 12:01:23,024 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-21 12:01:23,353 [main] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Initializing ExecutorService 'applicationTaskExecutor'
+2023-03-21 12:01:23,628 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Context refreshed
+2023-03-21 12:01:23,651 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Found 1 custom documentation plugin(s)
+2023-03-21 12:01:23,662 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner               - Scanning for api listing references
+2023-03-21 12:01:23,887 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-9090"]
+2023-03-21 12:01:23,939 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 9090 (http) with context path ''
+2023-03-21 12:01:28,328 [http-nio-9090-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-21 12:01:28,329 [http-nio-9090-exec-2] INFO  o.s.web.servlet.DispatcherServlet                  - Initializing Servlet 'dispatcherServlet'
+2023-03-21 12:01:28,344 [http-nio-9090-exec-2] INFO  o.s.web.servlet.DispatcherServlet                  - Completed initialization in 15 ms
+2023-03-21 12:08:00,011 [http-nio-9090-exec-5] ERROR o.a.c.c.C.[.[.[/].[dispatcherServlet]              - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessApiUsageException: Unable to locate Attribute  with the the given name [customer.id] on this ManagedType [com.storemanagement.model.TransactionEntity]; nested exception is java.lang.IllegalArgumentException: Unable to locate Attribute  with the the given name [customer.id] on this ManagedType [com.storemanagement.model.TransactionEntity]] with root cause
+java.lang.IllegalArgumentException: Unable to locate Attribute  with the the given name [customer.id] on this ManagedType [com.storemanagement.model.TransactionEntity]
+	at org.hibernate.metamodel.internal.AbstractManagedType.checkNotNull(AbstractManagedType.java:128)
+	at org.hibernate.metamodel.internal.AbstractManagedType.getAttribute(AbstractManagedType.java:113)
+	at org.hibernate.query.criteria.internal.path.AbstractFromImpl.locateAttributeInternal(AbstractFromImpl.java:111)
+	at org.hibernate.query.criteria.internal.path.AbstractPathImpl.locateAttribute(AbstractPathImpl.java:204)
+	at org.hibernate.query.criteria.internal.path.AbstractPathImpl.get(AbstractPathImpl.java:177)
+	at com.storemanagement.repository.TransactionRepository.lambda$0(TransactionRepository.java:52)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.applySpecificationToCriteria(SimpleJpaRepository.java:740)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.getQuery(SimpleJpaRepository.java:671)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.getQuery(SimpleJpaRepository.java:629)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:428)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:359)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:200)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:644)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:608)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lambda$invoke$3(RepositoryFactorySupport.java:595)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:595)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:59)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:295)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:144)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$ExposeRepositoryInvocationInterceptor.invoke(CrudMethodMetadataPostProcessor.java:364)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:61)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy114.findAll(Unknown Source)
+	at com.storemanagement.service.TransactionService.getTransactionsByFilter(TransactionService.java:130)
+	at com.storemanagement.resources.TransactionResource.filterTransactions(TransactionResource.java:100)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:893)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:798)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2023-03-21 12:34:55,162 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-21 12:34:55,311 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 133ms. Found 2 JPA repository interfaces.
+2023-03-21 12:34:56,411 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 9090 (http)
+2023-03-21 12:34:56,433 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-9090"]
+2023-03-21 12:34:56,448 [main] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2023-03-21 12:34:56,448 [main] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-03-21 12:34:56,624 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2023-03-21 12:34:56,624 [main] INFO  o.s.web.context.ContextLoader                      - Root WebApplicationContext: initialization completed in 3181 ms
+2023-03-21 12:34:56,837 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Starting...
+2023-03-21 12:34:56,841 [main] WARN  com.zaxxer.hikari.util.DriverDataSource            - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-21 12:34:57,219 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Start completed.
+2023-03-21 12:34:57,274 [main] INFO  o.hibernate.jpa.internal.util.LogHelper            - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2023-03-21 12:34:57,454 [main] INFO  org.hibernate.Version                              - HHH000412: Hibernate Core {5.3.17.Final}
+2023-03-21 12:34:57,456 [main] INFO  org.hibernate.cfg.Environment                      - HHH000206: hibernate.properties not found
+2023-03-21 12:34:57,651 [main] INFO  org.hibernate.annotations.common.Version           - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2023-03-21 12:34:57,825 [main] INFO  org.hibernate.dialect.Dialect                      - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-03-21 12:34:58,720 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-21 12:34:59,095 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator            - HHH000397: Using ASTQueryTranslatorFactory
+2023-03-21 12:34:59,467 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-21 12:34:59,774 [main] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Initializing ExecutorService 'applicationTaskExecutor'
+2023-03-21 12:35:00,049 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Context refreshed
+2023-03-21 12:35:00,072 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Found 1 custom documentation plugin(s)
+2023-03-21 12:35:00,082 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner               - Scanning for api listing references
+2023-03-21 12:35:00,326 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-9090"]
+2023-03-21 12:35:00,402 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 9090 (http) with context path ''
+2023-03-21 12:35:08,144 [http-nio-9090-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-21 12:35:08,145 [http-nio-9090-exec-2] INFO  o.s.web.servlet.DispatcherServlet                  - Initializing Servlet 'dispatcherServlet'
+2023-03-21 12:35:08,161 [http-nio-9090-exec-2] INFO  o.s.web.servlet.DispatcherServlet                  - Completed initialization in 16 ms
+2023-03-21 12:41:42,091 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-21 12:41:42,206 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 100ms. Found 2 JPA repository interfaces.
+2023-03-21 12:41:43,357 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 9090 (http)
+2023-03-21 12:41:43,392 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-9090"]
+2023-03-21 12:41:43,417 [main] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2023-03-21 12:41:43,418 [main] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-03-21 12:41:43,659 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2023-03-21 12:41:43,660 [main] INFO  o.s.web.context.ContextLoader                      - Root WebApplicationContext: initialization completed in 3335 ms
+2023-03-21 12:41:43,891 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Starting...
+2023-03-21 12:41:43,895 [main] WARN  com.zaxxer.hikari.util.DriverDataSource            - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-21 12:41:44,318 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Start completed.
+2023-03-21 12:41:44,379 [main] INFO  o.hibernate.jpa.internal.util.LogHelper            - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2023-03-21 12:41:44,484 [main] INFO  org.hibernate.Version                              - HHH000412: Hibernate Core {5.3.17.Final}
+2023-03-21 12:41:44,485 [main] INFO  org.hibernate.cfg.Environment                      - HHH000206: hibernate.properties not found
+2023-03-21 12:41:44,733 [main] INFO  org.hibernate.annotations.common.Version           - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2023-03-21 12:41:44,923 [main] INFO  org.hibernate.dialect.Dialect                      - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-03-21 12:41:45,929 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-21 12:41:46,329 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator            - HHH000397: Using ASTQueryTranslatorFactory
+2023-03-21 12:41:46,710 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-21 12:41:47,022 [main] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Initializing ExecutorService 'applicationTaskExecutor'
+2023-03-21 12:41:47,303 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Context refreshed
+2023-03-21 12:41:47,326 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Found 1 custom documentation plugin(s)
+2023-03-21 12:41:47,340 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner               - Scanning for api listing references
+2023-03-21 12:41:47,583 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-9090"]
+2023-03-21 12:41:47,635 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 9090 (http) with context path ''
+2023-03-21 12:42:04,507 [http-nio-9090-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-21 12:42:04,507 [http-nio-9090-exec-2] INFO  o.s.web.servlet.DispatcherServlet                  - Initializing Servlet 'dispatcherServlet'
+2023-03-21 12:42:04,519 [http-nio-9090-exec-2] INFO  o.s.web.servlet.DispatcherServlet                  - Completed initialization in 12 ms
+2023-03-21 12:44:12,034 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-21 12:44:12,159 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 107ms. Found 2 JPA repository interfaces.
+2023-03-21 12:44:13,214 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 9090 (http)
+2023-03-21 12:44:13,245 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-9090"]
+2023-03-21 12:44:13,262 [main] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2023-03-21 12:44:13,263 [main] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-03-21 12:44:13,436 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2023-03-21 12:44:13,437 [main] INFO  o.s.web.context.ContextLoader                      - Root WebApplicationContext: initialization completed in 2790 ms
+2023-03-21 12:44:13,659 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Starting...
+2023-03-21 12:44:13,664 [main] WARN  com.zaxxer.hikari.util.DriverDataSource            - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-21 12:44:14,067 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Start completed.
+2023-03-21 12:44:14,136 [main] INFO  o.hibernate.jpa.internal.util.LogHelper            - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2023-03-21 12:44:14,305 [main] INFO  org.hibernate.Version                              - HHH000412: Hibernate Core {5.3.17.Final}
+2023-03-21 12:44:14,306 [main] INFO  org.hibernate.cfg.Environment                      - HHH000206: hibernate.properties not found
+2023-03-21 12:44:14,570 [main] INFO  org.hibernate.annotations.common.Version           - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2023-03-21 12:44:14,812 [main] INFO  org.hibernate.dialect.Dialect                      - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-03-21 12:44:15,732 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-21 12:44:16,132 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator            - HHH000397: Using ASTQueryTranslatorFactory
+2023-03-21 12:44:16,609 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-21 12:44:16,923 [main] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Initializing ExecutorService 'applicationTaskExecutor'
+2023-03-21 12:45:09,616 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-21 12:45:09,737 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 92ms. Found 2 JPA repository interfaces.
+2023-03-21 12:45:10,778 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 9090 (http)
+2023-03-21 12:45:10,804 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-9090"]
+2023-03-21 12:45:10,820 [main] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2023-03-21 12:45:10,820 [main] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-03-21 12:45:11,012 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2023-03-21 12:45:11,012 [main] INFO  o.s.web.context.ContextLoader                      - Root WebApplicationContext: initialization completed in 2706 ms
+2023-03-21 12:45:11,246 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Starting...
+2023-03-21 12:45:11,251 [main] WARN  com.zaxxer.hikari.util.DriverDataSource            - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-21 12:45:11,665 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Start completed.
+2023-03-21 12:45:11,730 [main] INFO  o.hibernate.jpa.internal.util.LogHelper            - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2023-03-21 12:45:11,842 [main] INFO  org.hibernate.Version                              - HHH000412: Hibernate Core {5.3.17.Final}
+2023-03-21 12:45:11,845 [main] INFO  org.hibernate.cfg.Environment                      - HHH000206: hibernate.properties not found
+2023-03-21 12:45:12,080 [main] INFO  org.hibernate.annotations.common.Version           - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2023-03-21 12:45:12,251 [main] INFO  org.hibernate.dialect.Dialect                      - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-03-21 12:45:13,135 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-21 12:45:13,523 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator            - HHH000397: Using ASTQueryTranslatorFactory
+2023-03-21 12:45:13,905 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-21 12:45:14,179 [main] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Initializing ExecutorService 'applicationTaskExecutor'
+2023-03-21 12:45:14,426 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Context refreshed
+2023-03-21 12:45:14,447 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Found 1 custom documentation plugin(s)
+2023-03-21 12:45:14,457 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner               - Scanning for api listing references
+2023-03-21 12:45:14,687 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-9090"]
+2023-03-21 12:45:14,731 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 9090 (http) with context path ''
+2023-03-21 12:45:21,551 [http-nio-9090-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-21 12:45:21,552 [http-nio-9090-exec-2] INFO  o.s.web.servlet.DispatcherServlet                  - Initializing Servlet 'dispatcherServlet'
+2023-03-21 12:45:21,566 [http-nio-9090-exec-2] INFO  o.s.web.servlet.DispatcherServlet                  - Completed initialization in 14 ms
+2023-03-21 12:47:35,035 [background-preinit] DEBUG o.h.v.m.ResourceBundleMessageInterpolator          - Loaded expression factory via original TCCL
+2023-03-21 12:47:36,785 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-21 12:47:36,896 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 101ms. Found 2 JPA repository interfaces.
+2023-03-21 12:47:37,944 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 9090 (http)
+2023-03-21 12:47:37,968 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-9090"]
+2023-03-21 12:47:37,983 [main] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2023-03-21 12:47:37,984 [main] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-03-21 12:47:38,163 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2023-03-21 12:47:38,164 [main] INFO  o.s.web.context.ContextLoader                      - Root WebApplicationContext: initialization completed in 2850 ms
+2023-03-21 12:47:38,386 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Starting...
+2023-03-21 12:47:38,392 [main] WARN  com.zaxxer.hikari.util.DriverDataSource            - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-21 12:47:38,815 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Start completed.
+2023-03-21 12:47:38,889 [main] INFO  o.hibernate.jpa.internal.util.LogHelper            - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2023-03-21 12:47:39,042 [main] INFO  org.hibernate.Version                              - HHH000412: Hibernate Core {5.3.17.Final}
+2023-03-21 12:47:39,048 [main] INFO  org.hibernate.cfg.Environment                      - HHH000206: hibernate.properties not found
+2023-03-21 12:47:39,368 [main] INFO  org.hibernate.annotations.common.Version           - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2023-03-21 12:47:39,643 [main] INFO  org.hibernate.dialect.Dialect                      - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-03-21 12:47:40,557 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-21 12:47:40,955 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator            - HHH000397: Using ASTQueryTranslatorFactory
+2023-03-21 12:47:41,391 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-21 12:47:41,745 [main] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Initializing ExecutorService 'applicationTaskExecutor'
+2023-03-21 12:47:42,037 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Context refreshed
+2023-03-21 12:47:42,062 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Found 1 custom documentation plugin(s)
+2023-03-21 12:47:42,076 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner               - Scanning for api listing references
+2023-03-21 12:47:42,294 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-9090"]
+2023-03-21 12:47:42,343 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 9090 (http) with context path ''
+2023-03-21 12:47:52,058 [http-nio-9090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-21 12:47:52,059 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet                  - Initializing Servlet 'dispatcherServlet'
+2023-03-21 12:47:52,074 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet                  - Completed initialization in 15 ms
+2023-03-21 12:49:37,837 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-21 12:49:37,951 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 97ms. Found 2 JPA repository interfaces.
+2023-03-21 12:49:38,969 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 9090 (http)
+2023-03-21 12:49:38,998 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-9090"]
+2023-03-21 12:49:39,015 [main] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2023-03-21 12:49:39,015 [main] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-03-21 12:49:39,214 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2023-03-21 12:49:39,214 [main] INFO  o.s.web.context.ContextLoader                      - Root WebApplicationContext: initialization completed in 2807 ms
+2023-03-21 12:49:39,430 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Starting...
+2023-03-21 12:49:39,436 [main] WARN  com.zaxxer.hikari.util.DriverDataSource            - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-21 12:49:39,862 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Start completed.
+2023-03-21 12:49:39,931 [main] INFO  o.hibernate.jpa.internal.util.LogHelper            - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2023-03-21 12:49:40,038 [main] INFO  org.hibernate.Version                              - HHH000412: Hibernate Core {5.3.17.Final}
+2023-03-21 12:49:40,040 [main] INFO  org.hibernate.cfg.Environment                      - HHH000206: hibernate.properties not found
+2023-03-21 12:49:40,304 [main] INFO  org.hibernate.annotations.common.Version           - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2023-03-21 12:49:40,505 [main] INFO  org.hibernate.dialect.Dialect                      - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-03-21 12:49:41,339 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-21 12:49:41,773 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator            - HHH000397: Using ASTQueryTranslatorFactory
+2023-03-21 12:49:42,245 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-21 12:49:42,568 [main] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Initializing ExecutorService 'applicationTaskExecutor'
+2023-03-21 12:49:42,809 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Context refreshed
+2023-03-21 12:49:42,830 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Found 1 custom documentation plugin(s)
+2023-03-21 12:49:42,841 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner               - Scanning for api listing references
+2023-03-21 12:49:43,073 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-9090"]
+2023-03-21 12:49:43,135 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 9090 (http) with context path ''
+2023-03-21 12:49:57,303 [http-nio-9090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-21 12:49:57,304 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet                  - Initializing Servlet 'dispatcherServlet'
+2023-03-21 12:49:57,319 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet                  - Completed initialization in 15 ms
+2023-03-21 12:55:59,715 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-21 12:55:59,876 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 146ms. Found 2 JPA repository interfaces.
+2023-03-21 12:56:00,976 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 9090 (http)
+2023-03-21 12:56:01,001 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-9090"]
+2023-03-21 12:56:01,017 [main] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2023-03-21 12:56:01,017 [main] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-03-21 12:56:01,200 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2023-03-21 12:56:01,200 [main] INFO  o.s.web.context.ContextLoader                      - Root WebApplicationContext: initialization completed in 2975 ms
+2023-03-21 12:56:01,437 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Starting...
+2023-03-21 12:56:01,442 [main] WARN  com.zaxxer.hikari.util.DriverDataSource            - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-21 12:56:01,888 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Start completed.
+2023-03-21 12:56:01,957 [main] INFO  o.hibernate.jpa.internal.util.LogHelper            - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2023-03-21 12:56:02,111 [main] INFO  org.hibernate.Version                              - HHH000412: Hibernate Core {5.3.17.Final}
+2023-03-21 12:56:02,116 [main] INFO  org.hibernate.cfg.Environment                      - HHH000206: hibernate.properties not found
+2023-03-21 12:56:02,392 [main] INFO  org.hibernate.annotations.common.Version           - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2023-03-21 12:56:02,592 [main] INFO  org.hibernate.dialect.Dialect                      - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-03-21 12:56:03,486 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-21 12:56:03,861 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator            - HHH000397: Using ASTQueryTranslatorFactory
+2023-03-21 12:56:04,243 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-21 12:56:04,522 [main] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Initializing ExecutorService 'applicationTaskExecutor'
+2023-03-21 12:56:04,772 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Context refreshed
+2023-03-21 12:56:04,793 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Found 1 custom documentation plugin(s)
+2023-03-21 12:56:04,806 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner               - Scanning for api listing references
+2023-03-21 12:56:05,035 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-9090"]
+2023-03-21 12:56:05,083 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 9090 (http) with context path ''
+2023-03-21 12:56:16,079 [http-nio-9090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-21 12:56:16,080 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet                  - Initializing Servlet 'dispatcherServlet'
+2023-03-21 12:56:16,097 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet                  - Completed initialization in 16 ms
+2023-03-21 12:57:45,243 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-21 12:57:45,410 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 148ms. Found 2 JPA repository interfaces.
+2023-03-21 12:57:46,561 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 9090 (http)
+2023-03-21 12:57:46,585 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-9090"]
+2023-03-21 12:57:46,602 [main] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2023-03-21 12:57:46,602 [main] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-03-21 12:57:46,790 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2023-03-21 12:57:46,790 [main] INFO  o.s.web.context.ContextLoader                      - Root WebApplicationContext: initialization completed in 3117 ms
+2023-03-21 12:57:47,025 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Starting...
+2023-03-21 12:57:47,031 [main] WARN  com.zaxxer.hikari.util.DriverDataSource            - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-21 12:57:47,433 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Start completed.
+2023-03-21 12:57:47,511 [main] INFO  o.hibernate.jpa.internal.util.LogHelper            - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2023-03-21 12:57:47,736 [main] INFO  org.hibernate.Version                              - HHH000412: Hibernate Core {5.3.17.Final}
+2023-03-21 12:57:47,737 [main] INFO  org.hibernate.cfg.Environment                      - HHH000206: hibernate.properties not found
+2023-03-21 12:57:47,941 [main] INFO  org.hibernate.annotations.common.Version           - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2023-03-21 12:57:48,152 [main] INFO  org.hibernate.dialect.Dialect                      - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-03-21 12:57:48,983 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-21 12:57:49,364 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator            - HHH000397: Using ASTQueryTranslatorFactory
+2023-03-21 12:57:49,772 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-21 12:57:50,090 [main] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Initializing ExecutorService 'applicationTaskExecutor'
+2023-03-21 12:57:50,362 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Context refreshed
+2023-03-21 12:57:50,386 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Found 1 custom documentation plugin(s)
+2023-03-21 12:57:50,396 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner               - Scanning for api listing references
+2023-03-21 12:57:50,600 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-9090"]
+2023-03-21 12:57:50,651 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 9090 (http) with context path ''
+2023-03-21 12:58:21,820 [http-nio-9090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-21 12:58:21,821 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet                  - Initializing Servlet 'dispatcherServlet'
+2023-03-21 12:58:21,838 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet                  - Completed initialization in 17 ms
+2023-03-21 13:06:53,465 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-21 13:06:53,581 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 102ms. Found 2 JPA repository interfaces.
+2023-03-21 13:06:54,653 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 9090 (http)
+2023-03-21 13:06:54,678 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-9090"]
+2023-03-21 13:06:54,694 [main] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2023-03-21 13:06:54,694 [main] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-03-21 13:06:54,880 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2023-03-21 13:06:54,881 [main] INFO  o.s.web.context.ContextLoader                      - Root WebApplicationContext: initialization completed in 2861 ms
+2023-03-21 13:06:55,103 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Starting...
+2023-03-21 13:06:55,110 [main] WARN  com.zaxxer.hikari.util.DriverDataSource            - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-21 13:06:55,505 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Start completed.
+2023-03-21 13:06:55,565 [main] INFO  o.hibernate.jpa.internal.util.LogHelper            - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2023-03-21 13:06:55,707 [main] INFO  org.hibernate.Version                              - HHH000412: Hibernate Core {5.3.17.Final}
+2023-03-21 13:06:55,709 [main] INFO  org.hibernate.cfg.Environment                      - HHH000206: hibernate.properties not found
+2023-03-21 13:06:55,926 [main] INFO  org.hibernate.annotations.common.Version           - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2023-03-21 13:06:56,125 [main] INFO  org.hibernate.dialect.Dialect                      - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-03-21 13:06:56,968 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-21 13:06:57,440 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator            - HHH000397: Using ASTQueryTranslatorFactory
+2023-03-21 13:06:57,831 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-21 13:06:58,141 [main] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Initializing ExecutorService 'applicationTaskExecutor'
+2023-03-21 13:06:58,396 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Context refreshed
+2023-03-21 13:06:58,423 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Found 1 custom documentation plugin(s)
+2023-03-21 13:06:58,432 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner               - Scanning for api listing references
+2023-03-21 13:06:58,656 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-9090"]
+2023-03-21 13:06:58,713 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 9090 (http) with context path ''
+2023-03-21 13:07:05,203 [http-nio-9090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-21 13:07:05,204 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet                  - Initializing Servlet 'dispatcherServlet'
+2023-03-21 13:07:05,275 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet                  - Completed initialization in 71 ms
+2023-03-21 13:19:22,193 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-21 13:19:22,316 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 105ms. Found 2 JPA repository interfaces.
+2023-03-21 13:19:23,337 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 9090 (http)
+2023-03-21 13:19:23,363 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-9090"]
+2023-03-21 13:19:23,380 [main] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2023-03-21 13:19:23,380 [main] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-03-21 13:19:23,598 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2023-03-21 13:19:23,598 [main] INFO  o.s.web.context.ContextLoader                      - Root WebApplicationContext: initialization completed in 2875 ms
+2023-03-21 13:19:23,832 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Starting...
+2023-03-21 13:19:23,837 [main] WARN  com.zaxxer.hikari.util.DriverDataSource            - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-21 13:19:24,409 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Start completed.
+2023-03-21 13:19:24,509 [main] INFO  o.hibernate.jpa.internal.util.LogHelper            - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2023-03-21 13:19:24,789 [main] INFO  org.hibernate.Version                              - HHH000412: Hibernate Core {5.3.17.Final}
+2023-03-21 13:19:24,790 [main] INFO  org.hibernate.cfg.Environment                      - HHH000206: hibernate.properties not found
+2023-03-21 13:19:25,042 [main] INFO  org.hibernate.annotations.common.Version           - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2023-03-21 13:19:25,249 [main] INFO  org.hibernate.dialect.Dialect                      - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-03-21 13:19:26,335 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-21 13:19:26,781 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator            - HHH000397: Using ASTQueryTranslatorFactory
+2023-03-21 13:19:27,246 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-21 13:19:27,698 [main] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Initializing ExecutorService 'applicationTaskExecutor'
+2023-03-21 13:19:27,986 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Context refreshed
+2023-03-21 13:19:28,023 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Found 1 custom documentation plugin(s)
+2023-03-21 13:19:28,038 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner               - Scanning for api listing references
+2023-03-21 13:19:28,306 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-9090"]
+2023-03-21 13:19:28,357 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 9090 (http) with context path ''
+2023-03-21 13:19:45,071 [http-nio-9090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-21 13:19:45,072 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet                  - Initializing Servlet 'dispatcherServlet'
+2023-03-21 13:19:45,087 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet                  - Completed initialization in 15 ms
+2023-03-21 13:19:45,277 [http-nio-9090-exec-1] ERROR o.a.c.c.C.[.[.[/].[dispatcherServlet]              - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: Illegal pattern character 'T'] with root cause
+java.lang.IllegalArgumentException: Illegal pattern character 'T'
+	at java.base/java.text.SimpleDateFormat.compile(SimpleDateFormat.java:845)
+	at java.base/java.text.SimpleDateFormat.initialize(SimpleDateFormat.java:653)
+	at java.base/java.text.SimpleDateFormat.<init>(SimpleDateFormat.java:624)
+	at java.base/java.text.SimpleDateFormat.<init>(SimpleDateFormat.java:599)
+	at com.storemanagement.repository.TransactionRepository.getSpecificationFromFilter(TransactionRepository.java:29)
+	at com.storemanagement.service.TransactionService.getTransactionsByFilter(TransactionService.java:128)
+	at com.storemanagement.resources.TransactionResource.filterTransactions(TransactionResource.java:100)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:893)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:798)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2023-03-21 13:22:28,291 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-21 13:22:28,426 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 117ms. Found 2 JPA repository interfaces.
+2023-03-21 13:22:29,637 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 9090 (http)
+2023-03-21 13:22:29,661 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-9090"]
+2023-03-21 13:22:29,678 [main] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2023-03-21 13:22:29,679 [main] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-03-21 13:22:29,868 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2023-03-21 13:22:29,869 [main] INFO  o.s.web.context.ContextLoader                      - Root WebApplicationContext: initialization completed in 2869 ms
+2023-03-21 13:22:30,113 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Starting...
+2023-03-21 13:22:30,117 [main] WARN  com.zaxxer.hikari.util.DriverDataSource            - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-21 13:22:30,510 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Start completed.
+2023-03-21 13:22:30,575 [main] INFO  o.hibernate.jpa.internal.util.LogHelper            - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2023-03-21 13:22:30,752 [main] INFO  org.hibernate.Version                              - HHH000412: Hibernate Core {5.3.17.Final}
+2023-03-21 13:22:30,754 [main] INFO  org.hibernate.cfg.Environment                      - HHH000206: hibernate.properties not found
+2023-03-21 13:22:30,985 [main] INFO  org.hibernate.annotations.common.Version           - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2023-03-21 13:22:31,175 [main] INFO  org.hibernate.dialect.Dialect                      - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-03-21 13:22:32,081 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-21 13:22:32,524 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator            - HHH000397: Using ASTQueryTranslatorFactory
+2023-03-21 13:22:32,944 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-21 13:22:33,226 [main] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Initializing ExecutorService 'applicationTaskExecutor'
+2023-03-21 13:22:33,476 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Context refreshed
+2023-03-21 13:22:33,499 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Found 1 custom documentation plugin(s)
+2023-03-21 13:22:33,510 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner               - Scanning for api listing references
+2023-03-21 13:22:33,719 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-9090"]
+2023-03-21 13:22:33,761 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 9090 (http) with context path ''
+2023-03-21 13:22:56,459 [http-nio-9090-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-21 13:22:56,461 [http-nio-9090-exec-2] INFO  o.s.web.servlet.DispatcherServlet                  - Initializing Servlet 'dispatcherServlet'
+2023-03-21 13:22:56,495 [http-nio-9090-exec-2] INFO  o.s.web.servlet.DispatcherServlet                  - Completed initialization in 34 ms
+2023-03-21 13:25:45,994 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-21 13:25:46,140 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 131ms. Found 2 JPA repository interfaces.
+2023-03-21 13:25:47,384 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 9090 (http)
+2023-03-21 13:25:47,410 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-9090"]
+2023-03-21 13:25:47,435 [main] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2023-03-21 13:25:47,436 [main] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-03-21 13:25:47,652 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2023-03-21 13:25:47,653 [main] INFO  o.s.web.context.ContextLoader                      - Root WebApplicationContext: initialization completed in 3095 ms
+2023-03-21 13:25:47,862 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Starting...
+2023-03-21 13:25:47,871 [main] WARN  com.zaxxer.hikari.util.DriverDataSource            - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-21 13:25:48,412 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Start completed.
+2023-03-21 13:25:48,485 [main] INFO  o.hibernate.jpa.internal.util.LogHelper            - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2023-03-21 13:25:48,705 [main] INFO  org.hibernate.Version                              - HHH000412: Hibernate Core {5.3.17.Final}
+2023-03-21 13:25:48,706 [main] INFO  org.hibernate.cfg.Environment                      - HHH000206: hibernate.properties not found
+2023-03-21 13:25:48,932 [main] INFO  org.hibernate.annotations.common.Version           - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2023-03-21 13:25:49,171 [main] INFO  org.hibernate.dialect.Dialect                      - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-03-21 13:25:50,476 [main] INFO  o.h.t.schema.internal.SchemaCreatorImpl            - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@4a3383dc'
+2023-03-21 13:25:50,478 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-21 13:25:50,924 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator            - HHH000397: Using ASTQueryTranslatorFactory
+2023-03-21 13:25:51,325 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-21 13:25:51,635 [main] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Initializing ExecutorService 'applicationTaskExecutor'
+2023-03-21 13:25:52,022 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Context refreshed
+2023-03-21 13:25:52,065 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Found 1 custom documentation plugin(s)
+2023-03-21 13:25:52,081 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner               - Scanning for api listing references
+2023-03-21 13:25:52,362 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-9090"]
+2023-03-21 13:25:52,414 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 9090 (http) with context path ''
+2023-03-21 13:26:13,922 [http-nio-9090-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-21 13:26:13,923 [http-nio-9090-exec-2] INFO  o.s.web.servlet.DispatcherServlet                  - Initializing Servlet 'dispatcherServlet'
+2023-03-21 13:26:13,938 [http-nio-9090-exec-2] INFO  o.s.web.servlet.DispatcherServlet                  - Completed initialization in 15 ms
+2023-03-21 13:55:38,143 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-21 13:55:38,280 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 117ms. Found 2 JPA repository interfaces.
+2023-03-21 13:55:39,445 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 9090 (http)
+2023-03-21 13:55:39,474 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-9090"]
+2023-03-21 13:55:39,488 [main] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2023-03-21 13:55:39,488 [main] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-03-21 13:55:39,681 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2023-03-21 13:55:39,681 [main] INFO  o.s.web.context.ContextLoader                      - Root WebApplicationContext: initialization completed in 2972 ms
+2023-03-21 13:55:39,928 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Starting...
+2023-03-21 13:55:39,932 [main] WARN  com.zaxxer.hikari.util.DriverDataSource            - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-21 13:55:40,370 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Start completed.
+2023-03-21 13:55:40,459 [main] INFO  o.hibernate.jpa.internal.util.LogHelper            - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2023-03-21 13:55:40,632 [main] INFO  org.hibernate.Version                              - HHH000412: Hibernate Core {5.3.17.Final}
+2023-03-21 13:55:40,633 [main] INFO  org.hibernate.cfg.Environment                      - HHH000206: hibernate.properties not found
+2023-03-21 13:55:40,870 [main] INFO  org.hibernate.annotations.common.Version           - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2023-03-21 13:55:41,067 [main] INFO  org.hibernate.dialect.Dialect                      - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-03-21 13:55:42,182 [main] INFO  o.h.t.schema.internal.SchemaCreatorImpl            - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@71098fb3'
+2023-03-21 13:55:42,185 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-21 13:55:42,630 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator            - HHH000397: Using ASTQueryTranslatorFactory
+2023-03-21 13:55:43,042 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-21 13:55:43,345 [main] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Initializing ExecutorService 'applicationTaskExecutor'
+2023-03-21 13:55:43,624 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Context refreshed
+2023-03-21 13:55:43,655 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Found 1 custom documentation plugin(s)
+2023-03-21 13:55:43,667 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner               - Scanning for api listing references
+2023-03-21 13:55:43,902 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-9090"]
+2023-03-21 13:55:43,946 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 9090 (http) with context path ''
+2023-03-21 13:56:00,691 [http-nio-9090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-21 13:56:00,692 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet                  - Initializing Servlet 'dispatcherServlet'
+2023-03-21 13:56:00,713 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet                  - Completed initialization in 21 ms
+2023-03-21 13:57:05,619 [http-nio-9090-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver        - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.util.Date` from String "2022-03-21 08:26:11": not a valid representation (error: Failed to parse Date value '2022-03-21 08:26:11': Cannot parse date "2022-03-21 08:26:11": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSZ', parsing fails (leniency? null)); nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.util.Date` from String "2022-03-21 08:26:11": not a valid representation (error: Failed to parse Date value '2022-03-21 08:26:11': Cannot parse date "2022-03-21 08:26:11": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSZ', parsing fails (leniency? null))
+ at [Source: (PushbackInputStream); line: 4, column: 17] (through reference chain: com.storemanagement.filters.TransactionFilter["fromDate"])]
+2023-03-21 13:57:29,866 [http-nio-9090-exec-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver        - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.util.Date` from String "2022-03-21 08:26:11.000+0000": not a valid representation (error: Failed to parse Date value '2022-03-21 08:26:11.000+0000': Cannot parse date "2022-03-21 08:26:11.000+0000": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSZ', parsing fails (leniency? null)); nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.util.Date` from String "2022-03-21 08:26:11.000+0000": not a valid representation (error: Failed to parse Date value '2022-03-21 08:26:11.000+0000': Cannot parse date "2022-03-21 08:26:11.000+0000": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSZ', parsing fails (leniency? null))
+ at [Source: (PushbackInputStream); line: 4, column: 17] (through reference chain: com.storemanagement.filters.TransactionFilter["fromDate"])]
+2023-03-21 13:59:52,939 [http-nio-9090-exec-7] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver        - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.util.Date` from String "2022-03-21 08:26:11.000+0000": not a valid representation (error: Failed to parse Date value '2022-03-21 08:26:11.000+0000': Cannot parse date "2022-03-21 08:26:11.000+0000": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSZ', parsing fails (leniency? null)); nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.util.Date` from String "2022-03-21 08:26:11.000+0000": not a valid representation (error: Failed to parse Date value '2022-03-21 08:26:11.000+0000': Cannot parse date "2022-03-21 08:26:11.000+0000": while it seems to fit format 'yyyy-MM-dd'T'HH:mm:ss.SSSZ', parsing fails (leniency? null))
+ at [Source: (PushbackInputStream); line: 4, column: 17] (through reference chain: com.storemanagement.filters.TransactionFilter["fromDate"])]
+2023-03-21 14:02:54,613 [http-nio-9090-exec-5] ERROR o.a.c.c.C.[.[.[/].[dispatcherServlet]              - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed; nested exception is java.lang.Error: Unresolved compilation problem: 
+	filter cannot be resolved to a variable
+] with root cause
+java.lang.Error: Unresolved compilation problem: 
+	filter cannot be resolved to a variable
+
+	at com.storemanagement.service.TransactionService.getTransactionsByFilter(TransactionService.java:158)
+	at com.storemanagement.resources.TransactionResource.filterTransactions(TransactionResource.java:100)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:893)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:798)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2023-03-21 14:09:45,169 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-21 14:09:45,318 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 131ms. Found 2 JPA repository interfaces.
+2023-03-21 14:09:46,543 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 9090 (http)
+2023-03-21 14:09:46,567 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-9090"]
+2023-03-21 14:09:46,584 [main] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2023-03-21 14:09:46,584 [main] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-03-21 14:09:46,787 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2023-03-21 14:09:46,788 [main] INFO  o.s.web.context.ContextLoader                      - Root WebApplicationContext: initialization completed in 2958 ms
+2023-03-21 14:09:47,009 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Starting...
+2023-03-21 14:09:47,015 [main] WARN  com.zaxxer.hikari.util.DriverDataSource            - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-21 14:09:47,451 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Start completed.
+2023-03-21 14:09:47,521 [main] INFO  o.hibernate.jpa.internal.util.LogHelper            - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2023-03-21 14:09:47,728 [main] INFO  org.hibernate.Version                              - HHH000412: Hibernate Core {5.3.17.Final}
+2023-03-21 14:09:47,739 [main] INFO  org.hibernate.cfg.Environment                      - HHH000206: hibernate.properties not found
+2023-03-21 14:09:48,075 [main] INFO  org.hibernate.annotations.common.Version           - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2023-03-21 14:09:48,290 [main] INFO  org.hibernate.dialect.Dialect                      - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-03-21 14:09:49,247 [main] INFO  o.h.t.schema.internal.SchemaCreatorImpl            - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@1b3a95d9'
+2023-03-21 14:09:49,250 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-21 14:09:49,680 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator            - HHH000397: Using ASTQueryTranslatorFactory
+2023-03-21 14:09:50,149 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-21 14:09:50,461 [main] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Initializing ExecutorService 'applicationTaskExecutor'
+2023-03-21 14:09:50,738 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Context refreshed
+2023-03-21 14:09:50,761 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Found 1 custom documentation plugin(s)
+2023-03-21 14:09:50,772 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner               - Scanning for api listing references
+2023-03-21 14:09:51,035 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-9090"]
+2023-03-21 14:09:51,089 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 9090 (http) with context path ''
+2023-03-21 14:10:16,620 [http-nio-9090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-21 14:10:16,621 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet                  - Initializing Servlet 'dispatcherServlet'
+2023-03-21 14:10:16,639 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet                  - Completed initialization in 18 ms
+2023-03-21 14:13:36,835 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-21 14:13:36,955 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 103ms. Found 2 JPA repository interfaces.
+2023-03-21 14:13:38,027 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 9090 (http)
+2023-03-21 14:13:38,055 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-9090"]
+2023-03-21 14:13:38,082 [main] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2023-03-21 14:13:38,082 [main] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-03-21 14:13:38,283 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2023-03-21 14:13:38,284 [main] INFO  o.s.web.context.ContextLoader                      - Root WebApplicationContext: initialization completed in 2949 ms
+2023-03-21 14:13:38,611 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Starting...
+2023-03-21 14:13:38,617 [main] WARN  com.zaxxer.hikari.util.DriverDataSource            - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-21 14:13:39,080 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Start completed.
+2023-03-21 14:13:39,152 [main] INFO  o.hibernate.jpa.internal.util.LogHelper            - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2023-03-21 14:13:39,321 [main] INFO  org.hibernate.Version                              - HHH000412: Hibernate Core {5.3.17.Final}
+2023-03-21 14:13:39,327 [main] INFO  org.hibernate.cfg.Environment                      - HHH000206: hibernate.properties not found
+2023-03-21 14:13:39,567 [main] INFO  org.hibernate.annotations.common.Version           - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2023-03-21 14:13:39,755 [main] INFO  org.hibernate.dialect.Dialect                      - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-03-21 14:13:40,706 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-21 14:13:41,088 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator            - HHH000397: Using ASTQueryTranslatorFactory
+2023-03-21 14:13:41,612 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-21 14:13:41,944 [main] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Initializing ExecutorService 'applicationTaskExecutor'
+2023-03-21 14:13:42,244 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Context refreshed
+2023-03-21 14:13:42,269 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Found 1 custom documentation plugin(s)
+2023-03-21 14:13:42,278 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner               - Scanning for api listing references
+2023-03-21 14:13:42,520 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-9090"]
+2023-03-21 14:13:42,569 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 9090 (http) with context path ''
+2023-03-21 14:13:58,729 [http-nio-9090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-21 14:13:58,730 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet                  - Initializing Servlet 'dispatcherServlet'
+2023-03-21 14:13:58,750 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet                  - Completed initialization in 19 ms
+2023-03-21 14:17:01,788 [http-nio-9090-exec-1] ERROR o.a.c.c.C.[.[.[/].[dispatcherServlet]              - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.storemanagement.repository.TransactionRepository.getAmountSpecification(TransactionRepository.java:52)
+	at com.storemanagement.repository.TransactionRepository.getSpecificationFromFilter(TransactionRepository.java:36)
+	at com.storemanagement.service.TransactionService.getTransactionsByFilter(TransactionService.java:128)
+	at com.storemanagement.resources.TransactionResource.filterTransactions(TransactionResource.java:99)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:893)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:798)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2023-03-21 14:18:31,936 [http-nio-9090-exec-3] ERROR o.a.c.c.C.[.[.[/].[dispatcherServlet]              - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.storemanagement.repository.TransactionRepository.getAmountSpecification(TransactionRepository.java:52)
+	at com.storemanagement.repository.TransactionRepository.getSpecificationFromFilter(TransactionRepository.java:36)
+	at com.storemanagement.service.TransactionService.getTransactionsByFilter(TransactionService.java:128)
+	at com.storemanagement.resources.TransactionResource.filterTransactions(TransactionResource.java:99)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:893)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:798)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2023-03-21 14:20:11,993 [http-nio-9090-exec-5] ERROR o.a.c.c.C.[.[.[/].[dispatcherServlet]              - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.storemanagement.repository.TransactionRepository.getAmountSpecification(TransactionRepository.java:52)
+	at com.storemanagement.repository.TransactionRepository.getSpecificationFromFilter(TransactionRepository.java:36)
+	at com.storemanagement.service.TransactionService.getTransactionsByFilter(TransactionService.java:128)
+	at com.storemanagement.resources.TransactionResource.filterTransactions(TransactionResource.java:99)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:893)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:798)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:94)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2023-03-21 14:20:56,167 [http-nio-9090-exec-10] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver        - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `com.storemanagement.filters.TransactionFilter$AmountOperator` from String "<=": value not one of declared Enum instance names: [GREATER_THAN_OR_EQUAL_TO, LESS_THAN_OR_EQUAL_TO, GREATER_THAN, EQUALS, LESS_THAN]; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `com.storemanagement.filters.TransactionFilter$AmountOperator` from String "<=": value not one of declared Enum instance names: [GREATER_THAN_OR_EQUAL_TO, LESS_THAN_OR_EQUAL_TO, GREATER_THAN, EQUALS, LESS_THAN]
+ at [Source: (PushbackInputStream); line: 5, column: 23] (through reference chain: com.storemanagement.filters.TransactionFilter["amountOperator"])]
+2023-03-21 14:44:12,211 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool                  - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m2s641ms987µs900ns).
+2023-03-21 20:24:15,162 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool                  - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h30s373ms882µs200ns).
+2023-03-21 22:50:31,414 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool                  - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h26m18s213ms179µs700ns).
+2023-03-21 23:02:59,261 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-21 23:02:59,402 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 120ms. Found 2 JPA repository interfaces.
+2023-03-21 23:03:00,893 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 9090 (http)
+2023-03-21 23:03:00,924 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-9090"]
+2023-03-21 23:03:00,941 [main] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2023-03-21 23:03:00,941 [main] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-03-21 23:03:01,175 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2023-03-21 23:03:01,176 [main] INFO  o.s.web.context.ContextLoader                      - Root WebApplicationContext: initialization completed in 4026 ms
+2023-03-21 23:03:01,481 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Starting...
+2023-03-21 23:03:01,485 [main] WARN  com.zaxxer.hikari.util.DriverDataSource            - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-21 23:03:02,071 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Start completed.
+2023-03-21 23:03:02,167 [main] INFO  o.hibernate.jpa.internal.util.LogHelper            - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2023-03-21 23:03:02,462 [main] INFO  org.hibernate.Version                              - HHH000412: Hibernate Core {5.3.17.Final}
+2023-03-21 23:03:02,464 [main] INFO  org.hibernate.cfg.Environment                      - HHH000206: hibernate.properties not found
+2023-03-21 23:03:02,712 [main] INFO  org.hibernate.annotations.common.Version           - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2023-03-21 23:03:02,992 [main] INFO  org.hibernate.dialect.Dialect                      - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-03-21 23:03:04,385 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-21 23:03:04,839 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator            - HHH000397: Using ASTQueryTranslatorFactory
+2023-03-21 23:03:05,321 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-21 23:03:05,747 [main] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Initializing ExecutorService 'applicationTaskExecutor'
+2023-03-21 23:03:06,075 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Context refreshed
+2023-03-21 23:03:06,107 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Found 1 custom documentation plugin(s)
+2023-03-21 23:03:06,118 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner               - Scanning for api listing references
+2023-03-21 23:03:06,465 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-9090"]
+2023-03-21 23:03:06,527 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 9090 (http) with context path ''
+2023-03-21 23:04:54,899 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-21 23:04:55,064 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 146ms. Found 2 JPA repository interfaces.
+2023-03-21 23:04:56,686 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 9090 (http)
+2023-03-21 23:04:56,741 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-9090"]
+2023-03-21 23:04:56,801 [main] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2023-03-21 23:04:56,801 [main] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-03-21 23:04:57,032 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2023-03-21 23:04:57,032 [main] INFO  o.s.web.context.ContextLoader                      - Root WebApplicationContext: initialization completed in 3933 ms
+2023-03-21 23:04:57,371 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Starting...
+2023-03-21 23:04:57,377 [main] WARN  com.zaxxer.hikari.util.DriverDataSource            - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-21 23:04:57,860 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Start completed.
+2023-03-21 23:04:57,943 [main] INFO  o.hibernate.jpa.internal.util.LogHelper            - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2023-03-21 23:04:58,142 [main] INFO  org.hibernate.Version                              - HHH000412: Hibernate Core {5.3.17.Final}
+2023-03-21 23:04:58,145 [main] INFO  org.hibernate.cfg.Environment                      - HHH000206: hibernate.properties not found
+2023-03-21 23:04:58,408 [main] INFO  org.hibernate.annotations.common.Version           - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2023-03-21 23:04:58,637 [main] INFO  org.hibernate.dialect.Dialect                      - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-03-21 23:04:59,757 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-21 23:05:00,227 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator            - HHH000397: Using ASTQueryTranslatorFactory
+2023-03-21 23:05:00,682 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-21 23:05:01,059 [main] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Initializing ExecutorService 'applicationTaskExecutor'
+2023-03-21 23:05:01,383 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Context refreshed
+2023-03-21 23:05:01,407 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Found 1 custom documentation plugin(s)
+2023-03-21 23:05:01,422 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner               - Scanning for api listing references
+2023-03-21 23:05:01,711 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-9090"]
+2023-03-21 23:05:01,760 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 9090 (http) with context path ''
+2023-03-21 23:05:13,151 [http-nio-9090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-21 23:05:13,152 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet                  - Initializing Servlet 'dispatcherServlet'
+2023-03-21 23:05:13,216 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet                  - Completed initialization in 63 ms
+2023-03-21 23:05:14,102 [http-nio-9090-exec-1] WARN  o.h.engine.jdbc.spi.SqlExceptionHelper             - SQL Error: 1062, SQLState: 23000
+2023-03-21 23:05:14,102 [http-nio-9090-exec-1] ERROR o.h.engine.jdbc.spi.SqlExceptionHelper             - Duplicate entry 'Wade2@gmail.com' for key 'customer.UK_dwk6cx0afu8bs9o4t536v1j5v'
+2023-03-21 23:05:14,109 [http-nio-9090-exec-1] ERROR o.h.internal.ExceptionMapperStandardImpl           - HHH000346: Error during managed flush [org.hibernate.exception.ConstraintViolationException: could not execute statement]
+2023-03-21 23:06:47,506 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-21 23:06:47,634 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 112ms. Found 2 JPA repository interfaces.
+2023-03-21 23:06:48,802 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 9090 (http)
+2023-03-21 23:06:48,831 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-9090"]
+2023-03-21 23:06:48,850 [main] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2023-03-21 23:06:48,851 [main] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-03-21 23:06:49,083 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2023-03-21 23:06:49,083 [main] INFO  o.s.web.context.ContextLoader                      - Root WebApplicationContext: initialization completed in 3162 ms
+2023-03-21 23:06:49,428 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Starting...
+2023-03-21 23:06:49,435 [main] WARN  com.zaxxer.hikari.util.DriverDataSource            - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-21 23:06:50,020 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Start completed.
+2023-03-21 23:06:50,100 [main] INFO  o.hibernate.jpa.internal.util.LogHelper            - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2023-03-21 23:06:50,329 [main] INFO  org.hibernate.Version                              - HHH000412: Hibernate Core {5.3.17.Final}
+2023-03-21 23:06:50,332 [main] INFO  org.hibernate.cfg.Environment                      - HHH000206: hibernate.properties not found
+2023-03-21 23:06:50,570 [main] INFO  org.hibernate.annotations.common.Version           - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2023-03-21 23:06:50,797 [main] INFO  org.hibernate.dialect.Dialect                      - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-03-21 23:06:51,925 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-21 23:06:52,385 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator            - HHH000397: Using ASTQueryTranslatorFactory
+2023-03-21 23:06:52,872 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-21 23:06:53,340 [main] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Initializing ExecutorService 'applicationTaskExecutor'
+2023-03-21 23:06:53,639 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Context refreshed
+2023-03-21 23:06:53,661 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Found 1 custom documentation plugin(s)
+2023-03-21 23:06:53,672 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner               - Scanning for api listing references
+2023-03-21 23:06:53,907 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-9090"]
+2023-03-21 23:06:53,957 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 9090 (http) with context path ''
+2023-03-21 23:07:09,788 [http-nio-9090-exec-9] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-21 23:07:09,789 [http-nio-9090-exec-9] INFO  o.s.web.servlet.DispatcherServlet                  - Initializing Servlet 'dispatcherServlet'
+2023-03-21 23:07:09,834 [http-nio-9090-exec-9] INFO  o.s.web.servlet.DispatcherServlet                  - Completed initialization in 45 ms

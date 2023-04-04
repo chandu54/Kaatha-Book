@@ -1,0 +1,30 @@
+2023-03-22 00:19:08,042 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-22 00:19:08,179 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 115ms. Found 2 JPA repository interfaces.
+2023-03-22 00:19:09,614 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 9090 (http)
+2023-03-22 00:19:09,641 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-9090"]
+2023-03-22 00:19:09,657 [main] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2023-03-22 00:19:09,658 [main] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-03-22 00:19:09,925 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2023-03-22 00:19:09,925 [main] INFO  o.s.web.context.ContextLoader                      - Root WebApplicationContext: initialization completed in 3357 ms
+2023-03-22 00:19:10,262 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Starting...
+2023-03-22 00:19:10,269 [main] WARN  com.zaxxer.hikari.util.DriverDataSource            - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-03-22 00:19:10,741 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Start completed.
+2023-03-22 00:19:10,861 [main] INFO  o.hibernate.jpa.internal.util.LogHelper            - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2023-03-22 00:19:11,151 [main] INFO  org.hibernate.Version                              - HHH000412: Hibernate Core {5.3.17.Final}
+2023-03-22 00:19:11,153 [main] INFO  org.hibernate.cfg.Environment                      - HHH000206: hibernate.properties not found
+2023-03-22 00:19:11,355 [main] INFO  org.hibernate.annotations.common.Version           - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2023-03-22 00:19:11,585 [main] INFO  org.hibernate.dialect.Dialect                      - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-03-22 00:19:12,675 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-22 00:19:13,129 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator            - HHH000397: Using ASTQueryTranslatorFactory
+2023-03-22 00:19:13,628 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-22 00:19:14,032 [main] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Initializing ExecutorService 'applicationTaskExecutor'
+2023-03-22 00:19:14,441 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Context refreshed
+2023-03-22 00:19:14,471 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Found 1 custom documentation plugin(s)
+2023-03-22 00:19:14,482 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner               - Scanning for api listing references
+2023-03-22 00:19:14,843 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-9090"]
+2023-03-22 00:19:14,955 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 9090 (http) with context path ''
+2023-03-22 00:19:24,226 [http-nio-9090-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-22 00:19:24,228 [http-nio-9090-exec-2] INFO  o.s.web.servlet.DispatcherServlet                  - Initializing Servlet 'dispatcherServlet'
+2023-03-22 00:19:24,261 [http-nio-9090-exec-2] INFO  o.s.web.servlet.DispatcherServlet                  - Completed initialization in 33 ms

@@ -1,0 +1,262 @@
+2023-04-02 15:46:51,961 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-02 15:46:52,160 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 167ms. Found 3 JPA repository interfaces.
+2023-04-02 15:46:54,256 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 9090 (http)
+2023-04-02 15:46:54,313 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-9090"]
+2023-04-02 15:46:54,358 [main] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2023-04-02 15:46:54,359 [main] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-04-02 15:46:54,873 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2023-04-02 15:46:54,874 [main] INFO  o.s.web.context.ContextLoader                      - Root WebApplicationContext: initialization completed in 5012 ms
+2023-04-02 15:46:55,409 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Starting...
+2023-04-02 15:46:55,424 [main] WARN  com.zaxxer.hikari.util.DriverDataSource            - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-04-02 15:46:56,311 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Start completed.
+2023-04-02 15:46:56,408 [main] INFO  o.hibernate.jpa.internal.util.LogHelper            - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2023-04-02 15:46:56,754 [main] INFO  org.hibernate.Version                              - HHH000412: Hibernate Core {5.3.17.Final}
+2023-04-02 15:46:56,754 [main] INFO  org.hibernate.cfg.Environment                      - HHH000206: hibernate.properties not found
+2023-04-02 15:46:57,211 [main] INFO  org.hibernate.annotations.common.Version           - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2023-04-02 15:46:57,659 [main] INFO  org.hibernate.dialect.Dialect                      - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-02 15:46:58,618 [main] INFO  org.hibernate.tuple.PojoInstantiator               - HHH000182: No default (no-argument) constructor for class: com.storemanagement.model.AdminUserEntity (class must be instantiated by Interceptor)
+2023-04-02 15:46:59,477 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-02 15:47:00,312 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator            - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-02 15:47:01,066 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-02 15:47:01,520 [main] INFO  o.s.s.web.DefaultSecurityFilterChain               - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1fd73dcb, org.springframework.security.web.context.SecurityContextPersistenceFilter@94b5fe3, org.springframework.security.web.header.HeaderWriterFilter@3a75d9a1, org.springframework.security.web.csrf.CsrfFilter@a4e1ca7, org.springframework.security.web.authentication.logout.LogoutFilter@7e92e9a2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3811464b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1644cc2d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@54c697c, org.springframework.security.web.session.SessionManagementFilter@7e305953, org.springframework.security.web.access.ExceptionTranslationFilter@6f5f892c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5643052d]
+2023-04-02 15:47:01,757 [main] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-02 15:47:02,106 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Context refreshed
+2023-04-02 15:47:02,140 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Found 1 custom documentation plugin(s)
+2023-04-02 15:47:02,153 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner               - Scanning for api listing references
+2023-04-02 15:47:02,398 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator          - Generating unique operation named: getCustomerUsingGET_1
+2023-04-02 15:47:02,510 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-9090"]
+2023-04-02 15:47:02,578 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 9090 (http) with context path ''
+2023-04-02 16:03:41,179 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-02 16:03:41,298 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 104ms. Found 3 JPA repository interfaces.
+2023-04-02 16:03:42,511 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 9090 (http)
+2023-04-02 16:03:42,534 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-9090"]
+2023-04-02 16:03:42,550 [main] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2023-04-02 16:03:42,550 [main] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-04-02 16:03:42,777 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2023-04-02 16:03:42,777 [main] INFO  o.s.web.context.ContextLoader                      - Root WebApplicationContext: initialization completed in 3096 ms
+2023-04-02 16:03:43,092 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Starting...
+2023-04-02 16:03:43,097 [main] WARN  com.zaxxer.hikari.util.DriverDataSource            - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-04-02 16:03:43,606 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Start completed.
+2023-04-02 16:03:43,668 [main] INFO  o.hibernate.jpa.internal.util.LogHelper            - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2023-04-02 16:03:43,905 [main] INFO  org.hibernate.Version                              - HHH000412: Hibernate Core {5.3.17.Final}
+2023-04-02 16:03:43,908 [main] INFO  org.hibernate.cfg.Environment                      - HHH000206: hibernate.properties not found
+2023-04-02 16:03:44,112 [main] INFO  org.hibernate.annotations.common.Version           - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2023-04-02 16:03:44,327 [main] INFO  org.hibernate.dialect.Dialect                      - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-02 16:03:45,351 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-02 16:03:45,812 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator            - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-02 16:03:46,315 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-02 16:03:46,660 [main] INFO  o.s.s.web.DefaultSecurityFilterChain               - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@61c42e54, org.springframework.security.web.context.SecurityContextPersistenceFilter@6821d4e1, org.springframework.security.web.header.HeaderWriterFilter@539f2fec, org.springframework.security.web.csrf.CsrfFilter@3f473daf, org.springframework.security.web.authentication.logout.LogoutFilter@5a0b550a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@213c812a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@21262bde, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@533690d, org.springframework.security.web.session.SessionManagementFilter@36c5a4b7, org.springframework.security.web.access.ExceptionTranslationFilter@2d5b549b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3fe59f84]
+2023-04-02 16:03:46,864 [main] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-02 16:03:47,124 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Context refreshed
+2023-04-02 16:03:47,148 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Found 1 custom documentation plugin(s)
+2023-04-02 16:03:47,158 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner               - Scanning for api listing references
+2023-04-02 16:03:47,331 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator          - Generating unique operation named: getCustomerUsingGET_1
+2023-04-02 16:03:47,400 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-9090"]
+2023-04-02 16:03:47,454 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 9090 (http) with context path ''
+2023-04-02 16:04:19,297 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-02 16:04:19,422 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 110ms. Found 3 JPA repository interfaces.
+2023-04-02 16:04:20,611 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 9090 (http)
+2023-04-02 16:04:20,636 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-9090"]
+2023-04-02 16:04:20,652 [main] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2023-04-02 16:04:20,653 [main] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-04-02 16:04:20,885 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2023-04-02 16:04:20,886 [main] INFO  o.s.web.context.ContextLoader                      - Root WebApplicationContext: initialization completed in 2985 ms
+2023-04-02 16:04:21,123 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Starting...
+2023-04-02 16:04:21,128 [main] WARN  com.zaxxer.hikari.util.DriverDataSource            - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-04-02 16:04:21,541 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Start completed.
+2023-04-02 16:04:21,612 [main] INFO  o.hibernate.jpa.internal.util.LogHelper            - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2023-04-02 16:04:21,784 [main] INFO  org.hibernate.Version                              - HHH000412: Hibernate Core {5.3.17.Final}
+2023-04-02 16:04:21,786 [main] INFO  org.hibernate.cfg.Environment                      - HHH000206: hibernate.properties not found
+2023-04-02 16:04:22,087 [main] INFO  org.hibernate.annotations.common.Version           - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2023-04-02 16:04:22,308 [main] INFO  org.hibernate.dialect.Dialect                      - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-02 16:04:23,344 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-02 16:04:23,779 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator            - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-02 16:04:24,208 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-02 16:04:24,560 [main] INFO  o.s.s.web.DefaultSecurityFilterChain               - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@334ac669, org.springframework.security.web.context.SecurityContextPersistenceFilter@7cb4d4ee, org.springframework.security.web.header.HeaderWriterFilter@280e4390, org.springframework.security.web.csrf.CsrfFilter@7bfedfb7, org.springframework.security.web.authentication.logout.LogoutFilter@6a1b4854, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5a0b550a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4417755b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@77430c79, org.springframework.security.web.session.SessionManagementFilter@6cee52e2, org.springframework.security.web.access.ExceptionTranslationFilter@28468162, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@48cbb4c5]
+2023-04-02 16:04:24,767 [main] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-02 16:04:25,011 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Context refreshed
+2023-04-02 16:04:25,035 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Found 1 custom documentation plugin(s)
+2023-04-02 16:04:25,046 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner               - Scanning for api listing references
+2023-04-02 16:04:25,255 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator          - Generating unique operation named: getCustomerUsingGET_1
+2023-04-02 16:04:25,353 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-9090"]
+2023-04-02 16:04:25,423 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 9090 (http) with context path ''
+2023-04-02 16:10:09,289 [http-nio-9090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-02 16:10:09,291 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet                  - Initializing Servlet 'dispatcherServlet'
+2023-04-02 16:10:09,308 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet                  - Completed initialization in 17 ms
+2023-04-02 16:10:09,636 [http-nio-9090-exec-1] WARN  o.a.catalina.util.SessionIdGeneratorBase           - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [269] milliseconds.
+2023-04-02 22:24:40,941 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool                  - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5h55m50s849ms482µs100ns).
+2023-04-02 22:30:46,013 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-02 22:30:46,163 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 132ms. Found 3 JPA repository interfaces.
+2023-04-02 22:30:50,108 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 9090 (http)
+2023-04-02 22:30:50,139 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-9090"]
+2023-04-02 22:30:50,158 [main] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2023-04-02 22:30:50,159 [main] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-04-02 22:30:50,422 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2023-04-02 22:30:50,422 [main] INFO  o.s.web.context.ContextLoader                      - Root WebApplicationContext: initialization completed in 5959 ms
+2023-04-02 22:30:50,769 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Starting...
+2023-04-02 22:30:50,775 [main] WARN  com.zaxxer.hikari.util.DriverDataSource            - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-04-02 22:30:51,360 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Start completed.
+2023-04-02 22:30:51,584 [main] INFO  o.hibernate.jpa.internal.util.LogHelper            - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2023-04-02 22:30:51,997 [main] INFO  org.hibernate.Version                              - HHH000412: Hibernate Core {5.3.17.Final}
+2023-04-02 22:30:51,999 [main] INFO  org.hibernate.cfg.Environment                      - HHH000206: hibernate.properties not found
+2023-04-02 22:30:52,417 [main] INFO  org.hibernate.annotations.common.Version           - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2023-04-02 22:30:52,684 [main] INFO  org.hibernate.dialect.Dialect                      - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-02 22:30:53,935 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-02 22:30:54,432 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator            - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-02 22:30:54,966 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-02 22:31:16,239 [main] INFO  o.s.s.web.DefaultSecurityFilterChain               - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@443b9ebb, org.springframework.security.web.context.SecurityContextPersistenceFilter@7bfedfb7, org.springframework.security.web.header.HeaderWriterFilter@464017f5, org.springframework.security.web.csrf.CsrfFilter@d03cdc7, org.springframework.security.web.authentication.logout.LogoutFilter@25814d3c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@393d4e34, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7d466ef9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4830c979, org.springframework.security.web.session.SessionManagementFilter@4c231f62, org.springframework.security.web.access.ExceptionTranslationFilter@44b82007, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7a0f1f9d]
+2023-04-02 22:31:16,455 [main] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-02 22:31:16,741 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Context refreshed
+2023-04-02 22:31:16,775 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Found 1 custom documentation plugin(s)
+2023-04-02 22:31:16,788 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner               - Scanning for api listing references
+2023-04-02 22:31:16,995 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator          - Generating unique operation named: getCustomerUsingGET_1
+2023-04-02 22:31:17,077 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-9090"]
+2023-04-02 22:31:17,150 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 9090 (http) with context path ''
+2023-04-02 22:31:25,890 [http-nio-9090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-02 22:31:25,892 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet                  - Initializing Servlet 'dispatcherServlet'
+2023-04-02 22:31:25,907 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet                  - Completed initialization in 15 ms
+2023-04-02 22:31:26,460 [http-nio-9090-exec-1] WARN  o.a.catalina.util.SessionIdGeneratorBase           - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [489] milliseconds.
+2023-04-02 22:33:52,710 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-02 22:33:52,861 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 132ms. Found 3 JPA repository interfaces.
+2023-04-02 22:34:47,633 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 9090 (http)
+2023-04-02 22:34:47,694 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-9090"]
+2023-04-02 22:34:47,711 [main] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2023-04-02 22:34:47,711 [main] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-04-02 22:34:48,019 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2023-04-02 22:34:48,019 [main] INFO  o.s.web.context.ContextLoader                      - Root WebApplicationContext: initialization completed in 57373 ms
+2023-04-02 22:34:48,292 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Starting...
+2023-04-02 22:34:48,298 [main] WARN  com.zaxxer.hikari.util.DriverDataSource            - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-04-02 22:34:48,882 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Start completed.
+2023-04-02 22:34:48,963 [main] INFO  o.hibernate.jpa.internal.util.LogHelper            - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2023-04-02 22:34:49,241 [main] INFO  org.hibernate.Version                              - HHH000412: Hibernate Core {5.3.17.Final}
+2023-04-02 22:34:49,244 [main] INFO  org.hibernate.cfg.Environment                      - HHH000206: hibernate.properties not found
+2023-04-02 22:34:49,480 [main] INFO  org.hibernate.annotations.common.Version           - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2023-04-02 22:34:49,684 [main] INFO  org.hibernate.dialect.Dialect                      - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-02 22:34:50,721 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-02 22:34:51,178 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator            - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-02 22:34:51,700 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-02 22:34:54,383 [main] INFO  o.s.s.web.DefaultSecurityFilterChain               - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@64ff0eaa, org.springframework.security.web.context.SecurityContextPersistenceFilter@1e86b2d1, org.springframework.security.web.header.HeaderWriterFilter@7a0f1f9d, org.springframework.security.web.csrf.CsrfFilter@f83616, org.springframework.security.web.authentication.logout.LogoutFilter@7da40bf4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4865434e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@373c8f35, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@401b7226, org.springframework.security.web.session.SessionManagementFilter@4830c979, org.springframework.security.web.access.ExceptionTranslationFilter@6764201e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2f541f60]
+2023-04-02 22:34:57,021 [main] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-02 22:34:57,280 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Context refreshed
+2023-04-02 22:34:57,308 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Found 1 custom documentation plugin(s)
+2023-04-02 22:34:57,319 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner               - Scanning for api listing references
+2023-04-02 22:34:57,489 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator          - Generating unique operation named: getCustomerUsingGET_1
+2023-04-02 22:34:57,566 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-9090"]
+2023-04-02 22:34:57,612 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 9090 (http) with context path ''
+2023-04-02 22:35:03,160 [http-nio-9090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-02 22:35:03,160 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet                  - Initializing Servlet 'dispatcherServlet'
+2023-04-02 22:35:03,170 [http-nio-9090-exec-1] INFO  o.s.web.servlet.DispatcherServlet                  - Completed initialization in 10 ms
+2023-04-02 22:35:03,492 [http-nio-9090-exec-1] WARN  o.a.catalina.util.SessionIdGeneratorBase           - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [271] milliseconds.
+2023-04-02 22:36:35,137 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-02 22:36:35,278 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 126ms. Found 3 JPA repository interfaces.
+2023-04-02 22:37:11,988 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 9090 (http)
+2023-04-02 22:37:12,020 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-9090"]
+2023-04-02 22:37:12,030 [main] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2023-04-02 22:37:12,030 [main] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-04-02 22:37:12,300 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2023-04-02 22:37:12,300 [main] INFO  o.s.web.context.ContextLoader                      - Root WebApplicationContext: initialization completed in 39002 ms
+2023-04-02 22:37:12,634 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Starting...
+2023-04-02 22:37:12,634 [main] WARN  com.zaxxer.hikari.util.DriverDataSource            - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-04-02 22:37:13,307 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Start completed.
+2023-04-02 22:37:13,402 [main] INFO  o.hibernate.jpa.internal.util.LogHelper            - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2023-04-02 22:37:13,662 [main] INFO  org.hibernate.Version                              - HHH000412: Hibernate Core {5.3.17.Final}
+2023-04-02 22:37:13,666 [main] INFO  org.hibernate.cfg.Environment                      - HHH000206: hibernate.properties not found
+2023-04-02 22:37:13,905 [main] INFO  org.hibernate.annotations.common.Version           - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2023-04-02 22:37:14,173 [main] INFO  org.hibernate.dialect.Dialect                      - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-02 22:37:15,293 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-02 22:37:15,757 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator            - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-02 22:37:16,251 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-02 22:37:21,627 [main] INFO  o.s.s.web.DefaultSecurityFilterChain               - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2a49753, org.springframework.security.web.context.SecurityContextPersistenceFilter@373fb666, org.springframework.security.web.header.HeaderWriterFilter@7641c4e7, org.springframework.security.web.csrf.CsrfFilter@698daff6, org.springframework.security.web.authentication.logout.LogoutFilter@65029fc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1bd53c5c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7a0f1f9d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6e68ccc9, org.springframework.security.web.session.SessionManagementFilter@397b5b2d, org.springframework.security.web.access.ExceptionTranslationFilter@6a1b4854, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@321c01c2]
+2023-04-02 22:37:21,840 [main] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-02 22:37:22,115 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Context refreshed
+2023-04-02 22:37:22,147 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Found 1 custom documentation plugin(s)
+2023-04-02 22:37:22,161 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner               - Scanning for api listing references
+2023-04-02 22:37:22,331 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator          - Generating unique operation named: getCustomerUsingGET_1
+2023-04-02 22:37:22,408 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-9090"]
+2023-04-02 22:37:22,496 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 9090 (http) with context path ''
+2023-04-02 22:37:27,174 [http-nio-9090-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-02 22:37:27,175 [http-nio-9090-exec-2] INFO  o.s.web.servlet.DispatcherServlet                  - Initializing Servlet 'dispatcherServlet'
+2023-04-02 22:37:27,186 [http-nio-9090-exec-2] INFO  o.s.web.servlet.DispatcherServlet                  - Completed initialization in 11 ms
+2023-04-02 22:37:27,477 [http-nio-9090-exec-2] WARN  o.a.catalina.util.SessionIdGeneratorBase           - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [241] milliseconds.
+2023-04-02 22:43:55,810 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-02 22:43:55,931 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 107ms. Found 3 JPA repository interfaces.
+2023-04-02 22:43:56,499 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@706ddbc8' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-02 22:43:56,505 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-02 22:43:57,284 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 9090 (http)
+2023-04-02 22:43:57,335 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-9090"]
+2023-04-02 22:43:57,354 [main] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2023-04-02 22:43:57,354 [main] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-04-02 22:43:57,651 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2023-04-02 22:43:57,652 [main] INFO  o.s.web.context.ContextLoader                      - Root WebApplicationContext: initialization completed in 3369 ms
+2023-04-02 22:43:57,982 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Starting...
+2023-04-02 22:43:57,989 [main] WARN  com.zaxxer.hikari.util.DriverDataSource            - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-04-02 22:43:58,649 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Start completed.
+2023-04-02 22:43:58,736 [main] INFO  o.hibernate.jpa.internal.util.LogHelper            - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2023-04-02 22:43:59,009 [main] INFO  org.hibernate.Version                              - HHH000412: Hibernate Core {5.3.17.Final}
+2023-04-02 22:43:59,010 [main] INFO  org.hibernate.cfg.Environment                      - HHH000206: hibernate.properties not found
+2023-04-02 22:43:59,419 [main] INFO  org.hibernate.annotations.common.Version           - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2023-04-02 22:43:59,731 [main] INFO  org.hibernate.dialect.Dialect                      - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-02 22:44:00,902 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-02 22:44:01,453 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator            - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-02 22:44:02,059 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-02 22:44:02,416 [main] INFO  o.s.s.web.DefaultSecurityFilterChain               - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@29682244, org.springframework.security.web.context.SecurityContextPersistenceFilter@2e845f1c, org.springframework.security.web.header.HeaderWriterFilter@51e14cb6, org.springframework.security.web.csrf.CsrfFilter@549fe529, org.springframework.security.web.authentication.logout.LogoutFilter@1ae2028d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1f67d37f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7a0df38e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3368cf02, org.springframework.security.web.session.SessionManagementFilter@4b6942a0, org.springframework.security.web.access.ExceptionTranslationFilter@1bf4a79b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@66c91224]
+2023-04-02 22:44:02,645 [main] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-02 22:44:02,947 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Context refreshed
+2023-04-02 22:44:02,976 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Found 1 custom documentation plugin(s)
+2023-04-02 22:44:02,986 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner               - Scanning for api listing references
+2023-04-02 22:44:03,203 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator          - Generating unique operation named: getCustomerUsingGET_1
+2023-04-02 22:44:03,316 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-9090"]
+2023-04-02 22:44:03,356 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 9090 (http) with context path ''
+2023-04-02 22:48:10,025 [http-nio-9090-exec-4] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-02 22:48:10,025 [http-nio-9090-exec-4] INFO  o.s.web.servlet.DispatcherServlet                  - Initializing Servlet 'dispatcherServlet'
+2023-04-02 22:48:10,047 [http-nio-9090-exec-4] INFO  o.s.web.servlet.DispatcherServlet                  - Completed initialization in 22 ms
+2023-04-02 22:48:10,457 [http-nio-9090-exec-4] WARN  o.a.catalina.util.SessionIdGeneratorBase           - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [373] milliseconds.
+2023-04-02 22:49:39,772 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-02 22:49:39,931 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 142ms. Found 3 JPA repository interfaces.
+2023-04-02 22:49:40,675 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@6ea246af' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-02 22:49:40,682 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-04-02 22:49:41,553 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 9090 (http)
+2023-04-02 22:49:41,576 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-9090"]
+2023-04-02 22:49:41,593 [main] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2023-04-02 22:49:41,593 [main] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.36]
+2023-04-02 22:49:41,840 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2023-04-02 22:49:41,841 [main] INFO  o.s.web.context.ContextLoader                      - Root WebApplicationContext: initialization completed in 4168 ms
+2023-04-02 22:49:42,068 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Starting...
+2023-04-02 22:49:42,074 [main] WARN  com.zaxxer.hikari.util.DriverDataSource            - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2023-04-02 22:49:42,573 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Start completed.
+2023-04-02 22:49:42,643 [main] INFO  o.hibernate.jpa.internal.util.LogHelper            - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2023-04-02 22:49:42,784 [main] INFO  org.hibernate.Version                              - HHH000412: Hibernate Core {5.3.17.Final}
+2023-04-02 22:49:42,787 [main] INFO  org.hibernate.cfg.Environment                      - HHH000206: hibernate.properties not found
+2023-04-02 22:49:43,060 [main] INFO  org.hibernate.annotations.common.Version           - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2023-04-02 22:49:43,326 [main] INFO  org.hibernate.dialect.Dialect                      - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2023-04-02 22:49:44,247 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-02 22:49:44,864 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator            - HHH000397: Using ASTQueryTranslatorFactory
+2023-04-02 22:49:45,399 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-02 22:49:45,831 [main] INFO  o.s.s.web.DefaultSecurityFilterChain               - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7ab8f93, org.springframework.security.web.context.SecurityContextPersistenceFilter@a1be5cb, org.springframework.security.web.header.HeaderWriterFilter@8a8cab8, org.springframework.security.web.csrf.CsrfFilter@58829c2c, org.springframework.security.web.authentication.logout.LogoutFilter@7a0df38e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@715523b8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@15e748b5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6037748a, org.springframework.security.web.session.SessionManagementFilter@57def953, org.springframework.security.web.access.ExceptionTranslationFilter@5e8684a3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@58c93be3]
+2023-04-02 22:49:46,036 [main] INFO  o.s.s.concurrent.ThreadPoolTaskExecutor            - Initializing ExecutorService 'applicationTaskExecutor'
+2023-04-02 22:49:46,300 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Context refreshed
+2023-04-02 22:49:46,323 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper         - Found 1 custom documentation plugin(s)
+2023-04-02 22:49:46,334 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner               - Scanning for api listing references
+2023-04-02 22:49:46,519 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator          - Generating unique operation named: getCustomerUsingGET_1
+2023-04-02 22:49:46,586 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-9090"]
+2023-04-02 22:49:46,641 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 9090 (http) with context path ''
+2023-04-02 22:50:31,966 [http-nio-9090-exec-10] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-02 22:50:31,968 [http-nio-9090-exec-10] INFO  o.s.web.servlet.DispatcherServlet                  - Initializing Servlet 'dispatcherServlet'
+2023-04-02 22:50:31,994 [http-nio-9090-exec-10] INFO  o.s.web.servlet.DispatcherServlet                  - Completed initialization in 26 ms
+2023-04-02 22:50:32,443 [http-nio-9090-exec-10] WARN  o.a.catalina.util.SessionIdGeneratorBase           - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [413] milliseconds.
