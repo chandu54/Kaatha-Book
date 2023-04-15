@@ -23,6 +23,7 @@ public class DataUtils {
 			customer.setName(FAKER.name().fullName());
 			customer.setPhoneNo(FAKER.phoneNumber().cellPhone());
 			customer.setEmail(FAKER.name().firstName() + "@gmail.com");
+			customer.setUnformattedPhone(customer.getPhoneNo());
 			customers.add(customer);
 		}
 		return customers;

@@ -22,7 +22,7 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 public class CustomerEntity extends BaseEntity{
 
 	@Id
-	@Column(name = "id")
+	@Column(name = "customer_id")
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 

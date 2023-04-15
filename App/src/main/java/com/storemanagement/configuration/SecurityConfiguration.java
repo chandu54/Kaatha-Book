@@ -1,62 +1,58 @@
 package com.storemanagement.configuration;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.config.http.SessionCreationPolicy;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 import com.storemanagement.service.AdminUserService;
 
 @Configuration
 @EnableWebSecurity
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
-	
-	@Value("${spring.security.ant.matchers}")
-	private String[] securityAntMatchers;
-
 
 	@Autowired
 	private AdminUserService userService;
 
-	@Override
 	@Autowired
-	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-		/* auth.userDetailsService(userService).passwordEncoder(encoder()); */
-		auth.userDetailsService(userService).passwordEncoder(NoOpPasswordEncoder.getInstance());
+	private JWTRequestFilter jwtRequestFilter;
+
+	@Override
+	@Bean
+	public AuthenticationManager authenticationManagerBean() throws Exception {
+		return super.authenticationManagerBean();
 	}
 
+	@Autowired
+	public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
+		auth.userDetailsService(userService);
+	}
+	
 	@Bean
 	public PasswordEncoder encoder() {
-		return new BCryptPasswordEncoder();
+		return NoOpPasswordEncoder.getInstance();
 	}
-	
+
 	@Override
 	protected void configure(final HttpSecurity httpSecurity) throws Exception {
-		httpSecurity.csrf().disable().authorizeRequests().antMatchers("/*").permitAll().anyRequest()
-				.authenticated().and().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
-				.httpBasic();
-		httpSecurity.csrf().ignoringAntMatchers(securityAntMatchers).disable();
-		httpSecurity.headers().frameOptions().sameOrigin();
+		httpSecurity.csrf().disable().authorizeRequests().antMatchers("/authenticate/token").permitAll()
+				.anyRequest().authenticated().and().exceptionHandling().and().sessionManagement()
+				.sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+		//We are intercepting every request and validating the token provided.
+		httpSecurity.addFilterBefore(jwtRequestFilter, UsernamePasswordAuthenticationFilter.class);
 	}
-	
+
 	@Override
-    public void configure(WebSecurity web) throws Exception {
-		web.ignoring().antMatchers("/v2/api-docs",
-                "/configuration/ui",
-                "/swagger-resources/**",
-                "/configuration/security",
-                "/swagger-ui.html",
-                "/webjars/**");
-    }
-
-
+	public void configure(WebSecurity web) throws Exception {
+		web.ignoring().antMatchers("/swagger-resources/**", "/swagger-ui.html");
+	}
 }

@@ -29,7 +29,7 @@ import com.storemanagement.model.enums.TransactionType;
 public class TransactionEntity extends BaseEntity{
 
 	@Id
-	@Column(name = "id")
+	@Column(name = "transaction_id")
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 
